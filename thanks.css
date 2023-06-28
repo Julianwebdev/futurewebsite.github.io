@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    width: 97vw;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+h1 {
+    font-size: 50px;
+   font-family: "Anuphan", sans-serif;
+}
+
+h2 {
+    font-family: "Anuphan", sans-serif;
+}
+
+.afbeelding {
+    width: 24vw;
+    margin-left: 25vw;
+    margin-bottom: 5vh;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width:24vw ;
+}
+
+.tekst {
+    width: 65vw;
+    margin-left: 5vw;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+    height: 44px;
+    width: 25vw;
+    font-family: "Anuphan", sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(92, 214, 86);
+    border-radius: 22px;
+}
+
+.buttons {
+    width: 30vw;
+    height: 60vh;
+    top: 10vh;
+    margin-left: 10vw;
+}

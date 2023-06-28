@@ -3,395 +3,214 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="initial-scale=1, maximun-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400&family=Carlito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <title>blokken</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer  src="app.js"></script>
+    <link rel="icon" href="images/output.png">
+    <title>future website</title>
   </head>
   <body>
+    <div class="loader loader--hidden"></div>
     <style>
-      /* CSS reset, dit niet aanpassen! */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 3s, visibility 3s;
+    z-index: 4;
+  }
 
-      html {
-        box-sizing: border-box;
-      }
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 3s ease infinite;
+  }
 
-      /* Hieronder mag je eigen CSS code */
+  @keyframes loading {
+    from { transform: rotate(0turn);}
+    to { transform: rotate(1turn) ;}
+  }
 
-      body {
-        display: inline-block;
-        overflow: auto;
-        width: 100%;
-        max-width: 98.6vw;
-      }
-
-      .img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .img1 {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .tekstvakje {
-        position: absolute;
-        top: 9vh;
-        border-radius: 20px;
-        padding-top: 9vh;
-        text-align: center;
-        justify-content: center;
-        width: 45vw;
-        height: 30vw;
-        background-color: black;
-        color: white;
-        margin-top: 25vh;
-        margin-left: 40vw;
-        margin-right: 15vw;
-        margin-bottom: 30vh;
-      }
-
-      .blokken {
-        display: block;
-        position: relative;
-        float: left;
-        width: 100%;
-        min-width: 98.7vw;
-      }
-
-      .blok1 {
-        display: block;
-        float: left;
-        width: 24vw;
-        height: 70vh;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
-        margin-left: 2vw;
-        margin-right: 2vw;
-        padding: 2vw;
-        border-radius: 15px;
-        background: linear-gradient(
-          rgb(100, 220, 250) 0%,
-          rgb(100, 220, 250) 30%,
-          rgb(237, 237, 237) 30%,
-          rgb(237, 237, 237) 100%
-        );
-        transition: transform 1.5s;
-        min-width: 320px;
-      }
-
-      .blok2 {
-        display: block;
-        float: left;
-        width: 30vw;
-        height: 75vh;
-        margin-left: 4vw;
-        margin: 2vw;
-        padding: 2vw;
-        border-radius: 15px;
-        background: linear-gradient(
-          rgb(85, 141, 237) 0%,
-          rgb(85, 141, 237) 30%,
-          rgb(237, 237, 237) 30%,
-          rgb(237, 237, 237) 100%
-        );
-        transition: transform 1.5s;
-        min-width: 320px;
-      }
-
-      .blok3 {
-        display: block;
-        float: left;
-        width: 24vw;
-        height: 70vh;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
-        margin-left: 2vw;
-        margin-right: 3vw;
-        padding: 2vw;
-        border-radius: 15px;
-        background: linear-gradient(
-          rgb(100, 220, 250) 0%,
-          rgb(100, 220, 250) 30%,
-          rgb(237, 237, 237) 30%,
-          rgb(237, 237, 237) 100%
-        );
-        transition: transform 1.5s;
-        min-width: 320px;
-      }
-
-      .ex1 {
-        margin-bottom: 9vh;
-      }
-
-      .ex2 {
-        margin-bottom: 4vw;
-      }
-
-      .ex3 {
-        margin-bottom: 10vh;
-      }
-
-      .ex1,
-      .ex2,
-      .ex3 {
-        color: white;
-        text-align: center;
-        font-family: "Anuphan", sans-serif;
-        line-height: 1rem;
-      }
-
-        a:link { TEXT-DECORATION: none}
-        a:visited { TEXT-DECORATION: none}
-        a:active { TEXT-DECORATION: none}
-
-      button {
-        display: flex;
-        outline: none;
-        text-align: center;
-        justify-content: center;
-        border-radius: 50px;
-        border: none;
-        padding: 0.1px;
-        margin-left: 1.8vw;
-        margin-right: 1vw;
-        width: 20vw;
-        height: 7vh;
-        background-color: rgb(71, 130, 233);
-      }
-
-      li {
-        margin-top: 1vh;
-        font-family: "Anuphan", sans-serif;
-        list-style: none;
-      }
-
-      .tweede {       
-        display: flex;
-        outline: none;
-        text-align: center;
-        justify-content: center;
-        border-radius: 50px;
-        border: none;
-        padding: 0.1px;
-        margin-left: 1.3vw;
-        margin-right: 1vw;
-        width: 24vw;
-        height: 7vh;
-        background-color: rgb(71, 130, 233);
-        margin-top: 0.4px;
-      }
-
-      .derde {
-        margin-top: 10vh;
-      }
-
-      h1 {
-        color: white;
-        line-height: 0.6;
-        font-size: 100px;
-        text-align: center;
-        justify-content: center;
-        margin: 13px;
-        font-family: "Anuphan", sans-serif;
-      }
-
-      h2 {
-        font-family: "Anuphan", sans-serif;
-        font-size: 30px;
-        margin: 2px;
-        color: white;
-      }
-      #tekstinvakje {
-        -webkit-animation: tekstvakjehoofd 5s both;
-        -moz-animation: tekstvakjehoofd 5s both;
-        -o-animation: tekstvakjehoofd 5s both;
-        animation: tekstvakjehoofd 5s both;
-        color: white;
-        font-size: 100px;
-        text-align: center;
-        justify-content: center;
-        margin: 3px;
-        font-family: "Anuphan", sans-serif;
-        line-height: 7vw;
-      }
-
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }       
-
-    .logo {
-        width: 70px;
-        margin-left: 3vw;
-    }
-
-      .blok1:hover {
-        transform: scale(1.1);
-      }
-
-      .blok2:hover {
-        transform: scale(1.1);
-      }
-
-      .blok3:hover {
-        transform: scale(1.1);
-      }
-
-      .header {
-        position: sticky;
-        border: 2px solid red;
-        height: 14vh;
-        width: 100%;
-        background-color: black;
-      }
-
-      .nav-links {
-        margin-top: 5px;
-      }
-
-      .nav-links li {
-        display: inline-block;
-        margin-top: 0px;
-        margin-right: 5vw;
-        color: white;
-        font-size: 24px;
-        font-family: "Anuphan", sans-serif;
-      }
-
-      .nav-links li a {
-        text-decoration: none;
-        color: white;
-      }
-      @-webkit-keyframes tekstvakjehoofd {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateX(-300px);
-        }
-        100% {
-          opacity: 0.8;
-          -webkit-transform: (0);
-        }
-      }
-      @-moz-keyframes tekstvakjehoofd {
-        0% {
-          opacity: 0;
-          -moz-transform: translateX(-300px);
-        }
-        100% {
-          opacity: 0.8;
-          -moz-transform: (0);
-        }
-      }
-      @-o-keyframes tekstvakjehoofd {
-        0% {
-          opacity: 0;
-          -o-transform: translateX(-300px);
-        }
-        100% {
-          opacity: 0.8;
-          -o-transform: (0);
-        }
-      }
-
-      @keyframes tekstvakjehoofd {
-        0% {
-          opacity: 0;
-          transform: translateX(-300px);
-        }
-        100% {
-          opacity: 0.8;
-          transform: (0);
-        }
-      }
     </style>
-    <div class="header">
-        <nav class="nav-links">
-            <img src="images/launch.jpg" class="logo">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">producten</a></li>
-                <li><a href="">review</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="img">
-      <img class="img1" src="images/hoofdfoto.jpg" alt="decoreation" />
-      <div class="tekstvakje">
-        <h1 id="tekstinvakje">your<br />future<br />website</h1>
-      </div>
-    </div>
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".loader").classList.add("load--hidden");
 
-    <div class="blokken">
-      <div class="blok1">
-        <h1>€150</h1>
-        <h2 class="ex1">exclusief hosting</h2>
-        <ul class="list">
-          <li>✔️ responsive webdesign</li>
-          <li>✔️ animaties</li>
-          <li>✔️ prijs = prijs ongeacht de tijd</li>
-          <li>✔️ helemaal naar uw wens</li>
-          <li>✔️ meerdere pagina's</li>
-          <li>❌ geen hosting</li>
+            document.querySelector(".loader").addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"))
+            })
+            ('load', function(load) { window.removeEventListener('load', load, false); setT})
+        });
+    </script>
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar with Search Box</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+   <script src="script.js" defer></script>
+
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <img src="images/output.png" alt="logo" class="logofoto">
+      <a href="#" class="logo">futurewebsite<a>
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#emailplane">
+          Contact</a></li>
+        <li><a href="#blocks">Products</a></li>
+      </ul>
+    </nav>
+    <div class="frontpage">
+      <img class="bigfrontpagepicture" src="images/hoofdfoto.jpg" alt="decoreation" />
+      <div id="textplane">
+        <h1 class="textinplane">your<br/>future<br/>website</h1>
+      </div>
+    </div>    
+    <div id="space"></div>
+    <div id="blocks">
+      <div class="block1" data-aos="fade-up" data-aos-duration="2500">
+        <h1>€160</h1>
+        <h2 class="ex1">exclusief domeinnaam</h2>
+  <br/><br/>
+        <ul class="checklist">
+          <li>    helemaal naar uw wens</li>
+          <li>    prijs = prijs ongeacht de tijd</li>
+          <li>    responsive webdesign</li>
+          <li>    eenmalig bedrag</li>
+          <li>    animaties</li>
+          <li>    meerdere pagina's</li>
+          <li>    hosting voor 10 euro extra</li>
         </ul>
         <a href="index1.html">
-            <button><h2>kopen</h2</button>
-          </a>
-      </div>
-      <div class="blok2">
-        <h1>€170</h1>
-        <h2 class="ex2">exclusief hosting</h2>
-        <ul>
-          <li>✔️ responsive webdesign</li>
-          <li>✔️ animaties</li>
-          <li>✔️ update na publicate</li>
-          <li>✔️ prijs = prijs ongeacht de tijd</li>
-          <li>✔️ helemaal naar uw wens</li>
-          <li>✔️ begeleiding bij hosting</li>
-          <li>✔️ meerdere pagina's</li>
-          <li>❌ geen hosting</li>
-        </ul>
-        <a href="index2.html">
-          <button class="tweede"><h2>starten</h2></button>
+          <div class="thirdbutton"><button><h2>starten</h2></button></div>
         </a>
       </div>
-      <div class="blok3">
+      <div class="block2" data-aos="fade-up" data-aos-duration="2000">
+        <h1>€190</h1>
+        <h2 class="ex2">exclusief domeinnaam</h2>
+        <ul   class="checklist">
+          <li>    helemaal naar uw wens</li>
+          <li>    prijs = prijs ongeacht de tijd</li>
+          <li>    responsive webdesign</li>
+          <li>    eenmalig bedrag</li>
+          <li>    animaties</li>
+          <li>    meerdere pagina's</li>
+          <li>    update na publicate</li>
+          <li>    hosting exclusief domeinnaam</li>
+        </ul>
+        <a href="index2.html">
+          <div class="secondbutton"><button><h2>starten</h2></button></div>
+        </a>
+      </div>
+      <div class="block3" data-aos="fade-up" data-aos-duration="2500">
         <h1>€110</h1>
-        <h2 class="ex3">exclusief hosting</h2>
-        <ul>
-          <li>✔️ prijs = prijs ongeacht de tijd</li>
-          <li>✔️ helemaal naar uw wens</li>
-          <li>✔️ 1 pagina</li>
-          <li>❌ geen hosting</li>
+        <h2 class="ex2">exclusief domeinnaam</h2>
+        <br/><br/><br/>
+        <ul  class="checklist">
+          <li>    helemaal naar uw wens</li>
+          <li>    prijs = prijs ongeacht de tijd</li>     
+          <li>    responsive webdesign</li>
+          <li>    eenmalig bedrag</li>
+          <li>    1 pagina</li>
+          <li>    hosting voor 10 euro extra</li>
         </ul>
         <a href="index3.html">
-            <button class="derde"><h2>kopen</h2></button>
-          </a>
+          <div class="thirdbutton"><button><h2>starten</h2></button></div>
+        </a>
       </div>
     </div>
+    <div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+    <div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+    <div id="space1">   <br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div id="portfolio" data-aos="fade-up" data-aos-duration="3000">
+  <div class="picture-emailplane"><img class="profilepicture" src="images/launch.jpg" alt="who am i"><br/><br/><h1 class="mynameinportfolio">Julian<br/>Duynkerke<br/><section class="stripe">________</section></h1><h3 class="myjob">Ready to make your website!</h3></div>
+  <div class="textportfolio"><H1 class="helloinportfolio">Hallo!</H1>
+<h2 class="textinportfolio">Ik ben Julian Duynkerke en ik ben 14 jaar oud. Vandaar dat ik u zulke lage prijzen kan aanbieden! Ik vind het super leuk om website te ontwikkelen. In mijn vrijetijd heb ik al heel veel geoefend met het ontwikkelen van websites. Natuurlijk zal ik niet het zelfde resultaat geven als een opgeleide web developer. Wanneer u een website zoekt die aan uw eisen voldoet, zit u hier aan het juiste adres. Maar... u moet u wel realiseren dat u wellicht een wat minder professionele website in handen krijgt. Maar ik hoop dat die reden u voor niet tegenhoud om hier een website te kiezen!</h2>
+<button class="sendmeaemail"><a href="mailto:yourwebsiteinthefuture@gmail.com">ik heb een vraag of opmerking!</a></button>
+</div>
+</div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+    
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      <li class="menu__item"><a class="menu__link" href='#'>Mail</a></li>
+    </ul>
+    <p style="font-family: 'Poppins', sans-serif;">&copy;2023 future website | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

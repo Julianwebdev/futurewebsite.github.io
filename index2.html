@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="support1.html">   
+<link rel="stylesheet" href="support1.html">  
+<link rel="icon" href="images/output.png"> 
 <title>contact</title>
 </head>
 <input type="hidden" name="next" value="support1.html">
 <body>
     <style>
         body {
-  overflow: hidden;
   background-color: #001660;
   display: flex;
   justify-content: center;
@@ -23,17 +23,10 @@
   height: 100vh;
 }
 
-.header {
-  padding: 5px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 10vh;
-}
-
 .form {
   border-radius: 15px;
   width: 52vw;
+  margin-top: 120vh;
   padding: 20px;
   background-color: white;
   justify-content: center;
@@ -60,7 +53,55 @@ input, textarea {
   height: 6vh;
 }
 
-#name, #email{
+#nameone, #nametwo {
+  margin: 10px;
+  background-color: #f5f5f5f5;
+  width: 23.07vw;
+  text-align: center;
+  border-radius: 30px;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 1.2rem;
+  height: 6vh;
+}
+
+#onderneming {
+  margin: 10px;
+  background-color: #f5f5f5f5;
+  width: 50vw;
+  text-align: center;
+  height: 4vh;
+  border-radius: 30px;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 1.2rem;
+  height: 14vh;
+}
+
+#hosting {
+  background-color: #f5f5f5f5;
+  margin: 10px;
+  width: 50vw;
+  text-align: center;
+  height: 4vh;
+  border-radius: 30px;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 1.2rem;
+  height: 12vh;
+
+}
+
+#pagina {
+  margin: 10px;
+  background-color: #f5f5f5f5;
+  width: 50vw;
+  text-align: center;
+  height: 4vh;
+  border-radius: 30px;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 1.2rem;
+  height: 6vh;
+}
+
+#email, #nieuw{
   margin: 10px;
   background-color: #f5f5f5f5;
   width: 50vw;
@@ -82,6 +123,18 @@ input, textarea {
   font-size: 1.2rem;
 }
 
+h1 {
+  text-align: center;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 3.2rem;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 1.8rem;
+}
+
 #btn {
   border-radius: 30px;
   border:#e75c67;
@@ -100,18 +153,48 @@ input, textarea {
   91px 100px 80px rgba(0, 0, 0, 0.13)
 }
 
-#btn:hover {
+.btn:hover {
   background: #ff7c87;
+}
+
+@media only screen and (max-width: 801px){
+  .form {
+    width: 100vw;
+    margin-top: 0vh;
+  }
+
+  #nameone, #nametwo{
+    width: 41vw;
+  }
+   #email, #nieuw, #hosting, #pagina, #onderneming, #subject1, #message {
+    width: 90vw;
+  }
+
+  #btn {
+    width: 88vw;
+    margin: 22px;
+  }
 }
     </style>
     <div class="form">
         <form method="post">
-            <input type="text" placeholder="Uw naam" id="name" autocomplete="off">
+          <h1>offerte aanvragen</h1>
+          <h2>persoonlijke informatie</h2>
+            <input type="text" placeholder="naam" id="nameone" autocomplete="off">
+            <input type="text" placeholder="bedrijfsnaam" id="nametwo" autocomplete="off">
             <input type="email" placeholder="Uw email" id="email" autocomplete="off">
-            <input type="text"  id="subject1" autocomplete="off" placeholder= "Doel van uw website">
-            <textarea id="message" placeholder="Uw eisen voor uw website(eventueel voorbeelden)" cols="30" rows="10"></textarea><br>
-            <button id="btn">eisen versturen</button>
+          <h2>website wensen</h2>
+            <input type="text" placeholder="Wilt u een nieuwe of bestaande website laten maken" id="nieuw" autocomplete="off">
+            <textarea id="hosting" type="text" placeholder="Bent u al in het bezit van een domeinnaam en/ of hosting? Wat is dan uw domeinnaam of hosting bedrijf?" autocomplete="off" cols="30" rows="7"></textarea><br/>
+            <input type="number" placeholder="Hoeveel pagina's moet uw website hebben? 1-50" id="pagina" autocomplete="off" min="1" max="50">
+            <textarea id="onderneming" placeholder="Kun je iets vertellen over jouw onderneming? Wat doe je en hoe lang ben je al bezig?" cols="30" rows="8"></textarea><br/>
+            <input type="text" id="subject1" autocomplete="off" placeholder= "Doel van uw website">
+            <textarea id="message" placeholder="Uw eisen voor uw website(eventueel voorbeelden)" cols="30" rows="10"></textarea><br/>
+            <br><br><input type='button' id='btn' value='Indienen' onClick=location.href='thanks.html'>
          </form>
+    </div>
+    <div class="footer">
+      
     </div>
 </body>
 <script src="https://smtpjs.com/v3/smtp.js">
@@ -120,11 +203,16 @@ input, textarea {
     var btn = document.getElementById('btn');
     btn.addEventListener('click',function(e){
         e.preventDefault()
-        var name = document.getElementById('name').value;
+        var nameone = document.getElementById('nameone').value;
+        var nametwo = document.getElementById('nametwo').value;
         var email = document.getElementById('email').value;
-        var subject= document.getElementById('email').value;
-        var message = document.getElementById('email').value;
-        var body = '2<br/>name: ' +name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message;
+        var nieuw = document.getElementById('nieuw').value;
+        var hosting = document.getElementById('hosting').value;
+        var pagina = document.getElementById('pagina').value;
+        var onderneming= document.getElementById('onderneming').value;
+        var subject= document.getElementById('subject1').value;
+        var message = document.getElementById('message').value;
+        var body = '2<br/> nameone: ' + nameone + '<br/> nametwo: ' + nametwo + '<br/> email: ' + email + '<br/> nieuw: ' + nieuw + '<br/> hosting: ' + hosting + '<br/> pagina: ' + pagina + '<br/> onderneming: ' + onderneming + '<br/> subject: ' + subject + '<br/> message: ' + message;
     Email.send({
     SecureToken : "3788d0a7-7c4c-4972-962a-cb860a247eae",
     To : 'yourwebsiteinthefuture@gmail.com',

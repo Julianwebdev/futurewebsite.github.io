@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="support1.html">   
+<title>contact</title>
+</head>
+<input type="hidden" name="next" value="support1.html">
+<body>
+    <style>
+        body {
+  overflow: hidden;
+  background-color: #001660;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 10vh;
+}
+
+.form {
+  border-radius: 15px;
+  width: 52vw;
+  padding: 20px;
+  background-color: white;
+  justify-content: center;
+}
+
+input, textarea {
+  width: 50%;
+  padding: 6px;
+  outline: none;
+  border: none;
+  margin: 6px 0px;
+}
+
+
+#subject1 {
+  margin: 10px;
+  background-color: #f5f5f5f5;
+  width: 50vw;
+  text-align: center;
+  height: 4vh;
+  border-radius: 30px;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 1.15rem;
+  height: 6vh;
+}
+
+#name, #email{
+  margin: 10px;
+  background-color: #f5f5f5f5;
+  width: 50vw;
+  text-align: center;
+  height: 4vh;
+  border-radius: 30px;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 1.2rem;
+  height: 6vh;
+
+}
+#message {
+  margin: 10px;
+  background-color: #f5f5f5f5;
+  width: 50vw;
+  border-radius: 30px;
+  text-align: center;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 1.2rem;
+}
+
+#btn {
+  border-radius: 30px;
+  border:#e75c67;
+  width: 51vw;
+  background: #ff5361;
+  text-align: center;
+  height: 50px;
+  font-family: 'Anuphan', sans-serif;
+  font-size: 1.9rem;
+  transition-duration: 1s;
+  box-shadow:   2.5px 2.8px 2.2px rgba(0, 0, 0, 0.037),
+  6.1px 6.7px 5.3px rgba(0, 0, 0, 0.053),
+  11.4px 12.5px 10px rgba(0, 0, 0, 0.065),
+  20.3px 22.3px 17.9px rgba(0, 0, 0, 0.077),
+  38px 41.8px 33.4px rgba(0, 0, 0, 0.093),
+  91px 100px 80px rgba(0, 0, 0, 0.13)
+}
+
+#btn:hover {
+  background: #ff7c87;
+}
+    </style>
+    <div class="form">
+        <form method="post">
+            <input type="text" placeholder="Uw naam" id="name" autocomplete="off">
+            <input type="email" placeholder="Uw email" id="email" autocomplete="off">
+            <input type="text"  id="subject1" autocomplete="off" placeholder= "Doel van uw website">
+            <textarea id="message" placeholder="Uw eisen voor uw website(eventueel voorbeelden)" cols="30" rows="10"></textarea><br>
+            <button id="btn">eisen versturen</button>
+         </form>
+    </div>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click',function(e){
+        e.preventDefault()
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject= document.getElementById('email').value;
+        var message = document.getElementById('email').value;
+        var body = '1name: ' +name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message;
+    Email.send({
+    SecureToken : "3788d0a7-7c4c-4972-962a-cb860a247eae",
+    To : 'yourwebsiteinthefuture@gmail.com',
+    From : "yourwebsiteinthefuture@gmail.com",
+    Subject : subject,
+    Body : body
+})//.then(
+  //message => alert(message)
+//);
+})
+</script>
+</html>

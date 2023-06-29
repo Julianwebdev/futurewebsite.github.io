@@ -385,6 +385,7 @@ button:hover {
   display: inline;
   margin-top: 20vw;
   margin: 1vw;
+  margin-left: 35px;
   float: left;
   font-size: 1.05rem;
 }

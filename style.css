@@ -390,7 +390,7 @@ button:hover {
 }
 
 .checklist li {
-background-image: url(images/check.svg);
+background-image: url(check.svg);
 background-repeat: no-repeat;
 padding-left: 25px;
 background-position: 0 3px;
@@ -737,7 +737,7 @@ h2 {
 
 }
 
-@media screen and (min-width: 1550px) {
+@media screen and (min-width: 1050px) {
 
   .nav-links{
     margin-top: 9px;

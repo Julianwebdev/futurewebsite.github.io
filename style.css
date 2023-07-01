@@ -262,7 +262,7 @@ a {
 .block2 {
   display: block;
   float: left;
-  width: 31vw;
+  width: 29vw;
   height: 84vh;
   margin-top: 2vw;
   margin-left: 4vw;
@@ -306,7 +306,7 @@ a {
   float: left;
   text-align: center;
   line-height: 1.2rem;
-  margin-bottom: 6vh;
+  margin-bottom: 8vh;
 }
 
 .block3 {

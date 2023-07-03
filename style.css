@@ -310,7 +310,7 @@ nav{
 .block2 {
   display: block;
   float: left;
-  width: 27vw;
+  width: 31vw;
   height: 84vh;
   margin-top: 2vw;
   margin-left: 4vw;
@@ -402,10 +402,10 @@ nav{
 }
 
 .ex1 {
-  float: left;
+  margin-bottom: 1vh;
   text-align: center;
-  font-family: "Anuphan", sans-serif;  
-  line-height: 1.19rem;
+  line-height: 1.6rem;
+  font-size: 39px;
 }
 
 button {

@@ -74,35 +74,27 @@
             ('load', function(load) { window.removeEventListener('load', load, false); setT})
         });
     </script>
- <nav>
-        <div class="logo">
-            <img src="output.png" alt="Logo Image">
-        </div>
-        <div class="hamburger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#blocks">Producten</a></li>
-            <li><a href="#portfolio">Contact</a></li>
-        </ul>
-    </nav>
-    <script>const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-      const links = document.querySelectorAll(".nav-links li");
-      
-      hamburger.addEventListener('click', ()=>{
-         //Animate Links
-          navLinks.classList.toggle("open");
-          links.forEach(link => {
-              link.classList.toggle("fade");
-          });
-      
-          //Hamburger Animation
-          hamburger.classList.toggle("toggle");
-      });</script>
+    <header>
+	      
+  <img class="logo" src= "images/output.png" alt="logo">
+	<a href="index.html" class="logotext">future website</a>
+	<nav>
+		<div class="menu-icon">
+			<div class="bar_un"></div>
+			<div class="bar_deux"></div>
+			<div class="bar_trois"></div>
+			
+
+		</div>
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#blocks">Producten</a></li>
+			<li><a href="#portfolio">Contact</a></li>
+		</ul>
+	</nav>
+
+</header>
     <div class="frontpage">
       <img class="bigfrontpagepicture" src="hoofdfoto.jpg" alt="decoreation" />
       <div id="textplane">

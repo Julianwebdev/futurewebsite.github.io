@@ -402,7 +402,7 @@ nav{
 }
 
 .ex3 {
-  margin-bottom: 1vh;
+  margin-bottom: 5vh;
   text-align: center;
   line-height: 1.6rem;
   font-size: 39px;
@@ -804,7 +804,7 @@ h2 {
     margin-bottom: 30px;
   }
 
-  .ex1, .ex2 {
+  .ex1, .ex2, .ex3 {
     font-size: 45px;
     line-height: 2.5rem;
   }

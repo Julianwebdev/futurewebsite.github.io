@@ -712,7 +712,9 @@ h2 {
   }
 
   .thirdbutton {
-    margin-left: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 13px;
   }
 
   .header {
@@ -723,10 +725,13 @@ h2 {
     height: 120vh;
   }
 
-  .ex1,
+  .ex1{
+    margin-bottom: 3vh;
+  }
 .ex2 {
   margin-bottom: 6.5vh;
 }
+
 
 }
 

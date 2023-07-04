@@ -737,6 +737,10 @@ h2 {
 
 @media screen and (min-width: 1400px) {
 
+
+	  .header {
+		  padding: 7px;
+	  }
   .nav-links{
     margin-top: 9px;
   }

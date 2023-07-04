@@ -739,7 +739,8 @@ h2 {
 
 
 	  .header {
-		  padding: 7px;
+		  display: inline;
+		  padding: 15px;
 	  }
   .nav-links{
     margin-top: 9px;

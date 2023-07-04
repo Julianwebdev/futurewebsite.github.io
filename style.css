@@ -300,13 +300,6 @@ nav{
   transform: scale(1.1);
 }
 
-.ex1 {
-  margin-bottom: 0vh;
-  text-align: center;
-  line-height: 1.6rem;
-  font-size: 39px;
-}
-
 .block2 {
   display: block;
   float: left;
@@ -402,6 +395,13 @@ nav{
 }
 
 .ex1 {
+  margin-bottom: 0vh;
+  text-align: center;
+  line-height: 1.6rem;
+  font-size: 39px;
+}
+
+.ex3 {
   margin-bottom: 1vh;
   text-align: center;
   line-height: 1.6rem;

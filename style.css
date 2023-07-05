@@ -694,6 +694,10 @@ h2 {
     margin-right: 0vw;
   }
 
+#textinplane {
+  font-size: 90px;
+}
+	
   #space1 {
     display: inline;
   }

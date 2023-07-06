@@ -719,6 +719,10 @@ h2 {
     padding-left: 12vw;
   }
 
+	.block1, .block2, .block3 {
+		height: 60vh;
+	}
+
   .secondbutton {
     margin-left: 18px;
   }
@@ -738,10 +742,10 @@ h2 {
   }
 
   .ex1{
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
   }
 .ex2 {
-  margin-bottom: 6.5vh;
+  margin-bottom: 9vh;
 }
 
 
@@ -770,6 +774,7 @@ h2 {
   h1 {
     font-size: 130px;
     margin-bottom: 30px;
+	  
   }
 
   .ex1, .ex2, .ex3 {

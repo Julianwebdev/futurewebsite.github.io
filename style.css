@@ -375,7 +375,7 @@ button:hover {
   background-color: rgb(100, 145, 222);
 }
 
-.checklist {
+.checklist, .checklist3 {
   display: inline;
   margin-left: 0px;
   float: left;
@@ -383,6 +383,14 @@ button:hover {
 }
 
 .checklist li {
+background-image: url(check.svg);
+background-repeat: no-repeat;
+padding-left: 25px;
+background-position: 0 3px;
+margin-right: 14px;
+float: left;
+}
+.checklist3 li {
 background-image: url(check.svg);
 background-repeat: no-repeat;
 padding-left: 25px;
@@ -772,12 +780,16 @@ h2 {
 		margin-bottom: 7vh;}
 
 	.ex3 {
-		margin-bottom: 2vw;
+		margin-bottom: 0vw;
 	}
 
   .checklist {
     font-size: 1.25rem;
   }
+
+.checklist3 {
+margin-bottom: 3vh;
+}
 
   .block1, .block3 {
     width: 27vw;

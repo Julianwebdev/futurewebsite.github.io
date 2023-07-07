@@ -115,10 +115,6 @@ header{
   margin-left: 3px;
 }
 
-.logotext {
-  display: hidden;
-}
-
 nav ul, nav:active ul {
 
 	display:none;
@@ -674,6 +670,7 @@ h2 {
 
 	.logotext {
   display: hidden;
+		display: none;
 }
 	
   .form {

@@ -193,14 +193,13 @@ nav li {
   animation: animationtext 0.75s ease-out 1s forwards;
 }
 
-#space {
+.space2 {
 display: hidden;
   width: 100%;
   height: 16vh;
 }
 
-.space1 {
-  display: hidden;
+.space2 {
   width: 100%;
   height: 16vh;
 }

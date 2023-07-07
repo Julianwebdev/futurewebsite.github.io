@@ -672,6 +672,10 @@ h2 {
 
 @media only screen and (max-width: 801px){
 
+	.logotext {
+  display: hidden;
+}
+	
   .form {
     width: 100vw;
     margin-top: 0vh;

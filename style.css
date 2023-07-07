@@ -704,7 +704,7 @@ h2 {
   }
 
   .textinplane {
-    font-size: 50px;
+    font-size: 10px;
 }
 	
   #space1 {
@@ -717,11 +717,10 @@ h2 {
   }
 
   #blocks {
-    padding-left: 12vw;
   }
 
 	.block1 {
-		height: 70vh;
+		height: 90vh;
 	}
 
   .secondbutton {

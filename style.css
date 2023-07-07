@@ -719,8 +719,9 @@ h2 {
   #blocks {
   }
 
-	.block1 {
+	.block1, .block2, .block3 {
 		height: 90vh;
+		width: 70vw;
 	}
 
   .secondbutton {

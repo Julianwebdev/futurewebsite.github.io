@@ -116,7 +116,7 @@ header{
 }
 
 .logotext {
-  display: none;
+  display: hidden;
 }
 
 nav ul, nav:active ul {
@@ -704,7 +704,7 @@ h2 {
   }
 
   .textinplane {
-    font-size: 10px;
+    font-size: 35px;
 }
 	
   #space1 {
@@ -719,9 +719,13 @@ h2 {
   #blocks {
   }
 
-	.block1, .block2, .block3 {
+	.block1, .block3 {
 		height: 90vh;
-		width: 70vw;
+		width: 50vw;
+	}
+
+	.block2{
+	height: 98vh;
 	}
 
   .secondbutton {

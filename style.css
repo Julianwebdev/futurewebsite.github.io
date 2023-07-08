@@ -721,15 +721,6 @@ h2 {
   #blocks {
   }
 
-	.block1, .block3 {
-		height: 90vh;
-		width: 50vw;
-	}
-
-	.block2{
-	height: 98vh;
-	}
-
   .secondbutton {
     margin-left: 18px;
   }
@@ -756,6 +747,17 @@ h2 {
 }
 
 
+}
+
+@media screen and (max-height: 590px) {
+	.block1, .block3 {
+		height: 90vh;
+		width: 50vw;
+	}
+
+	.block2{
+	height: 98vh;
+	}
 }
 
 @media screen and (min-width: 1400px) {

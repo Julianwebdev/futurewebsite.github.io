@@ -751,7 +751,7 @@ h2 {
 
 }
 
-@media screen and (max-height: 590px) {
+@media screen and (max-height: 640px) {
 	.block1, .block3 {
 		height: 90vh;
 		width: 50vw;
@@ -760,6 +760,10 @@ h2 {
 	.block2{
 	height: 98vh;
 	}
+
+	  .textinplane {
+    font-size: 75px;
+}
 }
 
 @media screen and (min-width: 1400px) {

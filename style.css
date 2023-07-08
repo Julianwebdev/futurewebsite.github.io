@@ -674,17 +674,6 @@ h2 {
 		display: none;
 }
 	
-  .form {
-    width: 100vw;
-    margin-top: 0vh;
-  }
-
-  #nameone, #nametwo{
-    width: 41vw;
-  }
-   #email, #nieuw, #hosting, #pagina, #onderneming, #subject1, #message {
-    width: 90vw;
-  }
 
   #btn {
     width: 88vw;
@@ -745,6 +734,19 @@ h2 {
 	.ex3 {
 	margin-bottom: 5vh;
 	}
+
+	.block1, .block3 {
+		height: 70vh;
+		width: 80vw;
+		margin-left: 10vw;
+	}
+
+	.block2{
+		height: 70vh;
+		width: 80vw;
+		margin-left: 10vw;
+	}
+}
 
 
 }

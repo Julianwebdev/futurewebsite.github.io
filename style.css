@@ -767,7 +767,10 @@ h2 {
 }
 
 @media screen and (min-width: 1400px) {
-
+  .bigfrontpagepicture {
+    width: 100%;
+    height: 100vh;
+  }
 
 	  header {
 		  display: inline-block;
@@ -809,6 +812,67 @@ h2 {
 
 .checklist3 {
 margin-bottom: 3vh;    font-size: 1.25rem;
+}
+
+  .block1, .block3 {
+    width: 27vw;
+  }
+  
+  .block2 {
+    width: 31vw;
+  }
+  
+  .thirdbutton {
+    width: 22.5vw;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin: 0px;
+  }
+}@media screen and (min-width: 1700px) {
+
+
+	  header {
+		  display: inline-block;
+		  padding-top: 22px;
+	  }
+  .nav-links{
+    margin-top: 9px;
+  }
+
+  #textplane{
+    margin-top: 25vh;
+  }
+
+  .textinplane {
+    font-size: 150px;
+    line-height: 130px;
+  }
+
+  h1 {
+    font-size: 130px;
+    margin-bottom: 30px;
+	  
+  }
+
+  .ex1, .ex2, .ex3 {
+    font-size: 45px;
+    line-height: 2.5rem;
+  }
+	.ex2 {
+		margin-bottom: 7vh;}
+
+	.ex3 {
+		margin-bottom: 0vw;
+	}
+
+  .checklist {
+    font-size: 1.55rem;
+  }
+
+.checklist3 {
+margin-bottom: 3vh;    font-size: 1.55rem;
 }
 
   .block1, .block3 {

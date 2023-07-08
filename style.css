@@ -718,9 +718,6 @@ h2 {
     border-radius: 43px;
   }
 
-  #blocks {
-  }
-
   .secondbutton {
     margin-left: 18px;
   }
@@ -743,8 +740,11 @@ h2 {
     margin-bottom: 5vh;
   }
 .ex2 {
-  margin-bottom: 9vh;
+  margin-bottom: 10vh;
 }
+	.ex3 {
+	margin-bottom: 5vh;
+	}
 
 
 }

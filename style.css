@@ -692,7 +692,7 @@ h2 {
   }
 
   .bigfrontpagepicture {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
 
@@ -706,7 +706,7 @@ h2 {
   }
 
   .textinplane {
-    font-size: 50px;
+    font-size: 75px;
 }
 	
   #space1 {

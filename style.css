@@ -407,16 +407,6 @@ float: left;
   height: 100vh;
 }
 
-.picture-emailplane {
-  display: block;
-  float: left;
-  padding: 2px;
-  background-color: black;
-  width: 37vw;
-  min-width: 430px;
-  height: 100vh;
-  position: relative;
-}
 
 .profilepicture {
   float: left;
@@ -674,6 +664,13 @@ h2 {
   display: hidden;
 		display: none;
 }
+
+	.textportfolio, .picture-emailplane {
+  display: block;
+  float: left;
+  width: 100%;
+}
+	
 	
 
   #btn {
@@ -739,13 +736,13 @@ h2 {
 	.block1, .block3 {
 		height: 70vh;
 		width: 80vw;
-		margin-left: 10vw;
+		margin-left: 6vw;
 	}
 
 	.block2{
 		height: 70vh;
 		width: 80vw;
-		margin-left: 10vw;
+		margin-left: 6vw;
 	}
 }
 

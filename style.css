@@ -8,12 +8,11 @@ html {
 *:after {
   box-sizing: inherit;
 }
-.body {
+body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-	max-width: 100vw;
- overflow-x: hidden;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -407,6 +406,16 @@ float: left;
   height: 100vh;
 }
 
+.picture-emailplane {
+  display: block;
+  float: left;
+  padding: 2px;
+  background-color: black;
+  width: 37vw;
+  min-width: 430px;
+  height: 100vh;
+  position: relative;
+}
 
 .profilepicture {
   float: left;
@@ -496,8 +505,8 @@ margin: 10vh auto;
   margin-right: 12.5vw;
 }
 
-.picture-emailplane {
-  width: 37.8vw;
+.whatsresponsive {
+  width: 98.8vw;
   height: 190vh;
   color: black;
   margin-bottom: 5vh;
@@ -656,7 +665,11 @@ h2 {
   margin: 2px;
   color: white;
 }
-
+	.textportfolio {
+  display: block;
+  float: left;
+  width: 100%;
+}
 
 @media only screen and (max-width: 801px){
 
@@ -664,13 +677,6 @@ h2 {
   display: hidden;
 		display: none;
 }
-
-	.textportfolio {
-  display: block;
-  float: left;
-  width: 100%;
-}
-	
 	
 
   #btn {
@@ -736,13 +742,13 @@ h2 {
 	.block1, .block3 {
 		height: 70vh;
 		width: 80vw;
-		margin-left: 6vw;
+		margin-left: 10vw;
 	}
 
 	.block2{
 		height: 70vh;
 		width: 80vw;
-		margin-left: 6vw;
+		margin-left: 10vw;
 	}
 }
 

@@ -665,14 +665,14 @@ h2 {
   margin: 2px;
   color: white;
 }
-	.textportfolio {
+
+@media only screen and (max-width: 801px){
+
+		.textportfolio {
   display: block;
   float: left;
   width: 100%;
 }
-
-@media only screen and (max-width: 801px){
-
 	.logotext {
   display: hidden;
 		display: none;

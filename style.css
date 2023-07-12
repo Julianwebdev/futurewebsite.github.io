@@ -667,12 +667,6 @@ h2 {
 }
 
 @media only screen and (max-width: 801px){
-
-		.textportfolio {
-  display: block;
-  float: left;
-  width: 100%;
-}
 	.logotext {
   display: hidden;
 		display: none;

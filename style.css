@@ -373,11 +373,19 @@ button:hover {
   background-color: rgb(100, 145, 222);
 }
 
-.checklist, .checklist3 {
+.checklist {
   display: inline;
   margin-left: 0px;
   float: left;
   font-size: 1.05rem;
+}
+
+.checklist3{
+  display: inline;
+  margin-left: 0px;
+  float: left;
+  font-size: 1.05rem;
+	margin-bottom: 3vh;
 }
 
 .checklist li {

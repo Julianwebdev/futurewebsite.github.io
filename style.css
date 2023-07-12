@@ -288,7 +288,7 @@ nav li {
 }
 
 .ex2 {
-  margin-bottom: 4vh;
+  margin-bottom: 8vh;
   text-align: center;
   line-height: 1.6rem;
   font-size: 39px;
@@ -385,7 +385,7 @@ button:hover {
   margin-left: 0px;
   float: left;
   font-size: 1.05rem;
-	margin-bottom: 3vh;
+	margin-bottom: 6.5vh;
 }
 
 .checklist li {

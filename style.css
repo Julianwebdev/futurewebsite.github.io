@@ -108,7 +108,7 @@ header{
 	height:7px;
 	background-color: #fff;
 	margin-top:11px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .logo {
@@ -752,6 +752,9 @@ h2 {
 		width: 80vw;
 		margin-left: 10vw;
 	}
+	  h2 {
+	  margin-top: 5px;
+  }
 }
 
 
@@ -834,7 +837,6 @@ margin-bottom: 3vh;    font-size: 1.25rem;
 
   h2 {
     font-size: 40px;
-	  margin-top: 5px;
     margin: 0px;
   }
 }@media screen and (min-width: 1700px) {

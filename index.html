@@ -169,15 +169,11 @@
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <div id="portfolio" data-aos="fade-up" data-aos-duration="3000">
   <div class="picture-emailplane"><img class="profilepicture" src="launch.jpg" alt="who am i"><br/><br/><h1 class="mynameinportfolio">Julian<br/>Duynkerke<br/><section class="stripe">________</section></h1>
-  <div class="wrapper">
-    <div class="static-txt">I'm a</div>
-    <ul class="dynamic-txts">
-      <li><span>Ready to make your website!</span></li>
-      <li><span>Designer</span></li>
-      <li><span>Developer</span></li>
-      <li><span>Freelancer</span></li>
-    </ul>
-  </div>
+<h1>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
   <div class="textportfolio"><H1 class="helloinportfolio">Hallo!</H1>
 <h2 class="textinportfolio">Ik ben Julian Duynkerke en 14 jaar oud. Vandaar dat ik u zulke lage prijzen kan aanbieden! Ik vind het super leuk om websites te ontwikkelen. In mijn vrije tijd heb ik al heel veel geoefend met het ontwikkelen van websites. Natuurlijk zal ik niet hetzelfde resultaat leveren als een opgeleide webdeveloper. Wanneer u een website zoekt die aan uw eisen voldoet, zit u hier aan het juiste adres. Maar... u moet u wel realiseren dat u wellicht een wat minder professionele website in handen krijgt. Ik hoop dat die reden u niet tegenhoudt om hier een website te kiezen!</h2>
 <button class="sendmeaemail"><a href="mailto:yourwebsiteinthefuture@gmail.com">Ik heb een vraag of opmerking!</a></button>
@@ -228,4 +224,60 @@
   <script>
     AOS.init();
   </script>
+	  <script>var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };</script>
 </html>

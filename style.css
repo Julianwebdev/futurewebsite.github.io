@@ -706,15 +706,15 @@ h2 {
 
 
   #textplane {
-    width: 90vw;
-    height: 88vw;
+    width: 100vw;
+    height: 93vw;
     margin-top: 20vh;
     margin-left: 3vw;
     margin-right: 0vw;
   }
 
   .textinplane {
-    font-size: 65px;
+    font-size: 53px;
 }
 	
   #space1 {

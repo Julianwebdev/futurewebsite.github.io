@@ -169,14 +169,53 @@
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <div id="portfolio" data-aos="fade-up" data-aos-duration="3000">
   <div class="picture-emailplane"><img class="profilepicture" src="launch.jpg" alt="who am i"><br/><br/><h1 class="mynameinportfolio">Julian<br/>Duynkerke<br/><section class="stripe">________</section></h1>
-<div class="input-wrapper">
-  <input aria-label="Ask us anything">
-  <span class="placeholder"></span>
-</div>
+  <h1>Ready to make your website!</h1>
   <div class="textportfolio"><H1 class="helloinportfolio">Hallo!</H1>
 <h2 class="textinportfolio">Ik ben Julian Duynkerke en 14 jaar oud. Vandaar dat ik u zulke lage prijzen kan aanbieden! Ik vind het super leuk om websites te ontwikkelen. In mijn vrije tijd heb ik al heel veel geoefend met het ontwikkelen van websites. Natuurlijk zal ik niet hetzelfde resultaat leveren als een opgeleide webdeveloper. Wanneer u een website zoekt die aan uw eisen voldoet, zit u hier aan het juiste adres. Maar... u moet u wel realiseren dat u wellicht een wat minder professionele website in handen krijgt. Ik hoop dat die reden u niet tegenhoudt om hier een website te kiezen!</h2>
 <button class="sendmeaemail"><a href="mailto:yourwebsiteinthefuture@gmail.com">Ik heb een vraag of opmerking!</a></button>
 </div>
+	<script>document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Utrecht.", "Full Service.", "Webdevelopment.", "Wij zijn Codefield!"];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+}); </script>
 </div>
 <div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
 <div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>

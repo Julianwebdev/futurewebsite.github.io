@@ -412,7 +412,7 @@ float: left;
 }
 
 #portfolio {
-  display: inline;
+  display: flex;
   position: relative;
   top: -60px;
   float: left;
@@ -435,6 +435,7 @@ float: left;
 font-size: 30px;
 	color:white;
   font-family: "Poppins", sans-serif;
+	margin-left: 15px;
 }
 
 .profilepicture {

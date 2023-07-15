@@ -431,6 +431,12 @@ float: left;
   position: relative;
 }
 
+.ready {
+font-size: 30px;
+	color:white;
+  font-family: "Poppins", sans-serif;
+}
+
 .profilepicture {
   float: left;
   width: 140px;
@@ -787,7 +793,7 @@ max-width: 98%;
 
 	  .textinplane {
     font-size: 65px;
-		  line-height: 50px;
+		  line-height: 20px;
 }
 }
 

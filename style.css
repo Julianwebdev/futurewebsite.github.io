@@ -482,48 +482,20 @@ margin: 10vh auto;
   line-height: 20px;
 }
 
-body {
-  display: grid;
-  height: 100vh;
-  place-items: center;
-  width: 100%;
+h1 {
+  font-size: 0.8em;
+  color: white;
+  text-transform: uppercase;
 }
 
-.input-wrapper {
-  display: block;
-  font-family: "Poppins", sans-serif;
-  font-size: 125%;
-  width: 90%;
-	color: white;
-  > input,
-  > .placeholder {
-    display: block;
-    appearance: none;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-  }
-  > .placeholder {
-    pointer-events: none;
-    @include typed(
-      "Ready to make your website!",
-      "Klaar om uw website te maken!",
-      "Web Developer",
-      1.5,
-      (
-        caret-width: 2px,
-        caret-space: 2px
-      )
-    );
-  }
-  > input {
-    &:focus,
-    &:active {
-      + .placeholder {
-        display: none;
-      }
-    }
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
   }
 }
 

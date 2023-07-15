@@ -239,7 +239,7 @@ font-size: 25px;
 }
 
 .firstbutton {
-  margin-left: 1px;
+  margin-left: 3,5vw;
   width: 20vw;
   min-width: 272px;
   justify-content: center;
@@ -330,7 +330,7 @@ font-size: 25px;
   border-radius: 50px;
   border: none;
   padding: 0.1px;
-  margin-left: 3px;
+  margin-left: 3,5vw;
   margin-right: 24px;
   width: 20vw;
   min-width: 272px;

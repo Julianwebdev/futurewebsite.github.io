@@ -807,8 +807,9 @@ max-width: 98%;
   }
 
   .textinplane {
-    font-size: 100px;
-    line-height: 130px;
+	  align-items:center;
+    font-size: 80px;
+    line-height: 80px;
   }
 
   h1 {

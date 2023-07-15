@@ -211,6 +211,10 @@ nav li {
   margin-bottom: 10vh;
 }
 
+.animatedtext {
+font-size: 25px;
+}
+
 .block1 {
   display: block;
   float: left;

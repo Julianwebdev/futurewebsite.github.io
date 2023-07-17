@@ -779,7 +779,7 @@ max-width: 98%;
 
 }
 
-@media screen and (max-height: 640px) {
+@media screen and (max-width: 640px) {
 	.block1, .block3 {
 		height: 90vh;
 		width: 50vw;

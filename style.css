@@ -439,7 +439,7 @@ float: left;
   inset: 0;
 margin: 10vh auto;
   transition: transform 0.75s;
-  position: absolute;
+position: relative;;
 }
 
 .helloinportfolio {
@@ -466,6 +466,7 @@ margin: 10vh auto;
   min-width: 430px;
   height: 100vh;
   text-align: center;
+	  position: relative;
 }
 
 .textinportfolio {
@@ -525,6 +526,7 @@ margin: 10vh auto;
   color: black;
   margin-bottom: 5vh;
   z-index: 1002;
+	  position: relative;
 }
 
 .footer {

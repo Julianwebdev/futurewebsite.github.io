@@ -421,6 +421,7 @@ float: left;
 }
 
 .picture-emailplane {
+  display: block;
   float: left;
   padding: 2px;
   background-color: black;
@@ -428,13 +429,6 @@ float: left;
   min-width: 430px;
   height: 100vh;
   position: relative;
-}
-
-.ready {
-font-size: 30px;
-	color:white;
-  font-family: "Poppins", sans-serif;
-	margin-left: 15px;
 }
 
 .profilepicture {
@@ -463,11 +457,13 @@ margin: 10vh auto;
  }
 
 .textportfolio {
+  display: block;
+  float: left;
   padding-top: 20vh;
   padding: 2px;
   background-color: #ececec;
-  width: 58vw;
-  min-width: 400px;
+  width: 61vw;
+  min-width: 430px;
   height: 100vh;
   text-align: center;
 }
@@ -487,21 +483,14 @@ margin: 10vh auto;
   line-height: 20px;
 }
 
-h1 {
-  font-size: 0.1rem;
-  color: white;
-  text-transform: uppercase;
-}
-
-span {
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
-}
-
-@keyframes caret {
-  50% {
-    border-color: transparent;
-  }
+.myjob {
+  text-align: center;
+  margin-top: 3.5vh;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 50px;
 }
 
 .mynameinportfolio {

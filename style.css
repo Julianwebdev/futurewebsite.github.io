@@ -412,7 +412,7 @@ float: left;
 }
 
 #portfolio {
-  display: flex;
+  display: inline;
   position: relative;
   top: -60px;
   float: left;

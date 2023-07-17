@@ -439,7 +439,7 @@ float: left;
   inset: 0;
 margin: 10vh auto;
   transition: transform 0.75s;
-position: relative;;
+position: absolute;
 }
 
 .helloinportfolio {
@@ -462,7 +462,7 @@ position: relative;;
   padding-top: 20vh;
   padding: 2px;
   background-color: #ececec;
-  width: 61vw;
+  width: 63vw;
   min-width: 430px;
   height: 100vh;
   text-align: center;

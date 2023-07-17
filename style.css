@@ -421,7 +421,6 @@ float: left;
 }
 
 .picture-emailplane {
-  display: block;
   float: left;
   padding: 2px;
   background-color: black;
@@ -464,8 +463,6 @@ margin: 10vh auto;
  }
 
 .textportfolio {
-  display: block;
-  float: left;
   padding-top: 20vh;
   padding: 2px;
   background-color: #ececec;

@@ -217,7 +217,7 @@ font-size: 25px;
 }
 
 .block1 {
-  display: block;
+  display: inline-block;
   float: left;
   width: 27vw;
   height: 80vh;

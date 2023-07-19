@@ -220,7 +220,7 @@ font-size: 25px;
   display: inline-block;
   float: left;
   width: 27vw;
-  height: 80vh;
+  height: 84vh;
   margin-top: 3vw;
   margin-bottom: 3vw;
   margin-left: 2vw;
@@ -255,7 +255,7 @@ font-size: 25px;
   display: block;
   float: left;
   width: 32vw;
-  height: 84vh;
+  height: 88vh;
   margin-top: 2vw;
   margin-left: 4vw;
   margin: 2vw;
@@ -305,7 +305,7 @@ font-size: 25px;
   display: block;
   float: left;
   width: 27vw;
-  height: 80vh;
+  height: 84vh;
   margin-top: 3vw;
   margin-bottom: 3vw;
   margin-left: 2vw;
@@ -847,7 +847,7 @@ margin-bottom: 3vh;    font-size: 1.25rem;
   
   .thirdbutton {
     width: 22.5vw;
-	  margin-left: 4vw;
+	  margin-left: 2.25vw;
   }
 
   h2 {

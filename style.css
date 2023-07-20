@@ -336,7 +336,6 @@ font-size: 25px;
   width: 20vw;
   min-width: 272px;
   height: 7vh;
-  background-color: rgb(71, 130, 233);
   margin-top: 0.4px;
   text-align: center;
 }
@@ -363,7 +362,7 @@ button {
   display: flex;
   outline: none;
   width: 278px;
-  height: 7vh;
+  height: 9vh;
   text-align: center;
   justify-content: center;
   border-radius: 50px;
@@ -702,7 +701,7 @@ h2 {
 
 
   #textplane {
-    width: 100vw;
+    width: 96vw;
     height: 93vw;
     margin-top: 20vh;
     margin-left: 3vw;
@@ -803,7 +802,7 @@ max-width: 98%;
 
 
   #textplane {
-    width: 100vw;
+    width: 96vw;
     height: 93vw;
     margin-top: 20vh;
     margin-left: 3vw;

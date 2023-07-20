@@ -776,7 +776,8 @@ max-width: 98%;
 	}
 
 	.block2{
-	height: 98vh;
+	height: 100vh;
+		margin-left: 2vw;
 	}
 
 	  .textinplane {

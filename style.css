@@ -769,9 +769,6 @@ max-width: 98%;
   }
 }
 
-
-}
-
 @media only screen and (max-width: 650px){
 	.block1, .block3 {
 		height: 90vh;

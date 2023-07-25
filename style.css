@@ -322,9 +322,9 @@ font-size: 25px;
 .start-button {
 	display: flex;
 	border: 0;
-  width: 38vh;
-  height: 10.5vh;
-  border-radius: 5.25vh;
+  width: 35vh;
+  height: 8vh;
+  border-radius: 4vh;
   color: white;
   padding: 10px 20px;
   text-align: center;

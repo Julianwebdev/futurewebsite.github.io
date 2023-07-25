@@ -319,7 +319,7 @@ font-size: 25px;
   font-size: 39px;
 }
 
-button {
+.start-button {
   width: 23vh;
   height: 16vh;
   border-radius: 5px;

@@ -275,7 +275,7 @@ font-size: 25px;
 .ex2 {
   margin-bottom: 4vh;
   text-align: center;
-  line-height: 1.6rem;
+  line-height: 1.95rem;
   font-size: 39px;
 }
 
@@ -308,14 +308,14 @@ font-size: 25px;
 .ex1 {
   margin-bottom: 0vh;
   text-align: center;
-  line-height: 1.6rem;
+  line-height: 1.95rem;
   font-size: 39px;
 }
 
 .ex3 {
   margin-bottom: 0vh;
   text-align: center;
-  line-height: 1.6rem;
+  line-height: 1.95rem;
   font-size: 39px;
 }
 
@@ -691,9 +691,6 @@ h2 {
   .secondbutton {
     margin-left: 18px;
   }
-
-  .thirdbutton {
-    display: inline-block;
     margin-top: 20px;
     margin-left: 13px;
   }
@@ -703,6 +700,9 @@ h2 {
   }
 
   .textportfolio {
+
+  .thirdbutton {
+    display: inline-block;
     height: 120vh;
 max-width: 98%;
   }

@@ -320,7 +320,7 @@ font-size: 25px;
 }
 
 .start-button {
-	border: none;
+	border: 0;
   width: 80vh;
   height: 12vh;
   border-radius: 6vh;

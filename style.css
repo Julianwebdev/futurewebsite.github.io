@@ -148,7 +148,7 @@ nav li {
 
 .bigfrontpagepicture {
   width: 100%;
-  height: 850px;
+  height: auto;
   object-fit: cover;
   object-position: bottom;
 }

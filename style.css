@@ -250,7 +250,7 @@ font-size: 25px;
 .block2 {
   display: block;
   float: left;
-  width: 31vw;
+  width: 30vw;
   height: 88vh;
   margin-top: 2vw;
   margin-left: 4vw;
@@ -320,7 +320,7 @@ font-size: 25px;
 }
 
 .start-button {
-  width: 26vh;
+  width: 30vh;
   height: 6vh;
   border-radius: 3vh;
   color: white;

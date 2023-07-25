@@ -1,6 +1,6 @@
 /* CSS reset, dit niet aanpassen! */
 
-html {F
+html {
   box-sizing: border-box;
 }
 *,
@@ -424,7 +424,7 @@ position: absolute;
   padding-top: 20vh;
   padding: 2px;
   background-color: #ececec;
-  width: 61.6vw;
+  width: 60.6vw;
   min-width: 430px;
   height: 100vh;
   text-align: center;

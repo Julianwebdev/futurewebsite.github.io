@@ -320,9 +320,10 @@ font-size: 25px;
 }
 
 .start-button {
-  width: 30vh;
-  height: 6vh;
-  border-radius: 3vh;
+	border: none;
+  width: 80vh;
+  height: 12vh;
+  border-radius: 6vh;
   color: white;
   padding: 10px 20px;
   text-align: center;

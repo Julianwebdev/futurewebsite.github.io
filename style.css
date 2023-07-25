@@ -1,6 +1,6 @@
 /* CSS reset, dit niet aanpassen! */
 
-html {
+html {F
   box-sizing: border-box;
 }
 *,
@@ -745,7 +745,7 @@ max-width: 98%;
 	  .textinplane {
 		  	  margin-top: 2vh;
     font-size: 45px;
-		  line-height: 32px;
+		  line-height: 45px;
 }
 
 		.logotext {

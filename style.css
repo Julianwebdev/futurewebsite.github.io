@@ -403,6 +403,7 @@ float: left;
 margin: 10vh auto;
   transition: transform 0.75s;
 position: absolute;
+	object-fit: cover;
 }
 
 .helloinportfolio {

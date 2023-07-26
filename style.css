@@ -278,7 +278,7 @@ font-size: 25px;
   line-height: 1.35rem;
   font-size: 20px;
 	margin-top: 4vh;
-	padding-left: 4vh;
+	padding-left: 5vh;
 }
 
 .block3 {
@@ -682,7 +682,7 @@ h2 {
   .textinplane {
 	  margin-top: 2vh;
     font-size: 53px;
-	  line-height: 59px ;
+	  line-height: 67px ;
 }
 	
   #space1 {
@@ -700,13 +700,13 @@ h2 {
 
 
   .ex1{
-    margin-bottom: 5vh;
+    margin-bottom: 1.5vh;
   }
 .ex2 {
-  margin-bottom: 8vh;
+  margin-bottom: 2.5vh;
 }
 	.ex3 {
-	margin-bottom: 2vh;
+	margin-bottom: 0vh;
 	}
 
 	.block1, .block3 {

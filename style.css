@@ -90,7 +90,7 @@ nav{
 
 
 
-@media only screen and (max-width:840px ){
+@media only screen and (max-width:900px ){
 
 
 
@@ -682,7 +682,7 @@ h2 {
   .textinplane {
 	  margin-top: 2vh;
     font-size: 53px;
-	  line-height: 50px ;
+	  line-height: 59px ;
 }
 	
   #space1 {

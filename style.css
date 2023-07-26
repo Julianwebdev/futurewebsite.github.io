@@ -653,7 +653,7 @@ h2 {
   color: white;
 }
 
-@media only screen and (max-width: 840px){
+@media only screen and (max-width: 800px) {
 	.logotext {
   display: hidden;
 		display: none;
@@ -694,24 +694,10 @@ h2 {
     border-radius: 43px;
   }
 
-  .secondbutton {
-    margin-left: 18px;
-  }
-    margin-top: 20px;
-    margin-left: 13px;
-  }
-
   .header {
     height: 16vh;
   }
 
-  .textportfolio {
-
-  .thirdbutton {
-    display: inline-block;
-    height: 120vh;
-max-width: 98%;
-  }
 
   .ex1{
     margin-bottom: 5vh;

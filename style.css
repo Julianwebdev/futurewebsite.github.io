@@ -273,10 +273,11 @@ font-size: 25px;
 }
 
 .ex2 {
-  margin-bottom: 4vh;
+  margin-bottom: 5vh;
   text-align: center;
-  line-height: 1.95rem;
-  font-size: 39px;
+  line-height: 1.35rem;
+  font-size: 20px;
+	margin-top: 4vh;
 }
 
 .block3 {
@@ -306,17 +307,19 @@ font-size: 25px;
 }
 
 .ex1 {
-  margin-bottom: 0vh;
+  margin-bottom: 1vh;
   text-align: center;
-  line-height: 1.95rem;
-  font-size: 39px;
+  line-height: 1.35rem;
+  font-size: 20px;
+margin-top: 4vh;
 }
 
 .ex3 {
-  margin-bottom: 0vh;
+  margin-bottom: 2vh;
   text-align: center;
-  line-height: 1.95rem;
-  font-size: 39px;
+  line-height: 1.35rem;
+  font-size: 20px;
+	margin-top: 4vh;
 }
 
 .start-button {

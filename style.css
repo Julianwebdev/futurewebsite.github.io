@@ -365,7 +365,7 @@ button:hover {
 }
 
 .checklist li {
-background-image: url(check.svg);
+background-image: url(images/check.svg);
 background-repeat: no-repeat;
 padding-left: 25px;
 background-position: 0 3px;
@@ -373,7 +373,7 @@ margin-right: 14px;
 float: left;
 }
 .checklist3 li {
-background-image: url(check.svg);
+background-image: url(images/check.svg);
 background-repeat: no-repeat;
 padding-left: 25px;
 background-position: 0 3px;

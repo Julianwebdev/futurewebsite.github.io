@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1, maximun-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400&family=Carlito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer  src="app.js"></script>
+    <link rel="icon" href="output.png">
+    <title>future website</title>
+  </head>
+  <body>
+    <div class="loader loader--hidden"></div>
+    <style>
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 3s, visibility 3s;
+    z-index: 4;
+  }
+
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 3s ease infinite;
+  }
+
+  @keyframes loading {
+    from { transform: rotate(0turn);}
+    to { transform: rotate(1turn) ;}
+  }
+
+    </style>
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".loader").classList.add("loader--hidden");
+
+            document.querySelector(".loader").addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"))
+            })
+            ('load', function(load) { window.removeEventListener('load', load, false); setT})
+        });
+    </script>
+    <header>
+	      
+  <img class="logo" src= "images/output.png" alt="logo">
+	<a href="index.html" class="logotext">future website</a>
+	<nav>
+		<div class="menu-icon">
+			<div class="bar_un"></div>
+			<div class="bar_deux"></div>
+			<div class="bar_trois"></div>
+			
+
+		</div>
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#blocks">Producten</a></li>
+			<li><a href="#portfolio">Contact</a></li>
+		</ul>
+	</nav>
+
+</header>
+    <div class="frontpage">
+      <img class="bigfrontpagepicture" src="images/hoofdfoto.jpg" alt="decoreation" />
+      <div id="textplane">
+        <h1 class="textinplane">your<br/>future<br/>website</h1>
+      </div>
+    </div>    
+    <div id="space"></div>
+    <div id="blocks">
+      <div class="block1" data-aos="fade-up" data-aos-duration="2500">
+        <h1>€160</h1>
+        <h2 class="ex1">exclusief domeinnaam</h2>
+  <br/><br/>
+        <ul class="checklist">
+          <li>    helemaal naar uw wens</li>
+          <li>    prijs = prijs ongeacht de tijd</li>
+          <li>    responsive webdesign</li>
+          <li>    eenmalig bedrag</li>
+          <li>    animaties (bewegende elementen)</li>
+          <li>    meerdere pagina's</li>
+          <li>    hosting voor 10 euro extra</li>
+        </ul>
+        <a href="index1fhtml">
+          <div class="thirdbutton"><button><h2>starten</h2></button></div>
+        </a>
+      </div>
+      <div class="block2" data-aos="fade-up" data-aos-duration="2000">
+        <h1>€190</h1>
+        <h2 class="ex2">exclusief domeinnaam</h2>
+        <ul   class="checklist">
+          <li>    helemaal naar uw wens</li>
+          <li>    prijs = prijs ongeacht de tijd</li>
+          <li>    responsive webdesign</li>
+          <li>    eenmalig bedrag</li>
+          <li>    animaties (bewegende elementen)</li>
+          <li>    meerdere pagina's</li>
+          <li>    update na publicate</li>
+          <li>    hosting exclusief domeinnaam</li>
+        </ul>
+        <a href="index2.html">
+          <div class="secondbutton"><button><h2>starten</h2></button></div>
+        </a>
+      </div>
+      <div class="block3" data-aos="fade-up" data-aos-duration="2500">
+        <h1>€110</h1>
+        <h2 class="ex3">exclusief domeinnaam</h2>
+        <br/><br/><br/>
+        <ul  class="checklist3">
+          <li>    helemaal naar uw wens</li>
+          <li>    prijs = prijs ongeacht de tijd</li>     
+          <li>    responsive webdesign</li>
+          <li>    eenmalig bedrag</li>
+          <li>     maar 1 pagina</li>
+          <li>    hosting voor 10 euro extra</li>
+        </ul>
+      
+      <div class="space1"></br></br></br></br>
+      </br></br></br></br></div>
+      </br></br></br></br></br></br>
+        <a href="index3.html">
+          <div class="thirdbutton"><button><h2>starten</h2></button></div>
+        </a>
+      </div>
+    </div>
+    <div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>	  
+    <div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+    <div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+    <div id="space1">   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div id="portfolio" data-aos="fade-up" data-aos-duration="3000">
+  <div class="picture-emailplane"><img class="profilepicture" src="images/launch.jpg" alt="who am i"><br/><br/><h1 class="mynameinportfolio">Julian<br/>Duynkerke<br/><section class="stripe">________</section></h1><h3 class="myjob">Ready to make your website!</h3></div>
+  <div class="textportfolio"><H1 class="helloinportfolio">Hallo!</H1>
+<h2 class="textinportfolio">Ik ben Julian Duynkerke en 14 jaar oud. Vandaar dat ik u zulke lage prijzen kan aanbieden! Ik vind het super leuk om websites te ontwikkelen. In mijn vrije tijd heb ik al heel veel geoefend met het ontwikkelen van websites. Natuurlijk zal ik niet hetzelfde resultaat leveren als een opgeleide webdeveloper. Wanneer u een website zoekt die aan uw eisen voldoet, zit u hier aan het juiste adres. Maar... u moet u wel realiseren dat u wellicht een wat minder professionele website in handen krijgt. Ik hoop dat die reden u niet tegenhoudt om hier een website te kiezen!</h2>
+<button class="sendmeaemail"><a href="mailto:yourwebsiteinthefuture@gmail.com">Ik heb een vraag of opmerking!</a></button>
+</div>
+</div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div id="space1">    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+    
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      <li class="menu__item"><a class="menu__link" href='#'>Mail</a></li>
+    </ul>
+    <p style="font-family: 'Poppins', sans-serif;">&copy;2023 future website | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

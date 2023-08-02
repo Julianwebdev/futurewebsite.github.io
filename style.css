@@ -381,6 +381,84 @@ margin-right: 14px;
 float: left;
 }
 
+.divicanmake {
+  display: flex;
+  width: 95vw;
+  height: 10vh;
+}
+
+.thingsicanmake {
+  font-size: 1.9rem;
+  font-family: "Anuphan", sans-serif;
+  text-align: center;
+}
+
+.itscenter {
+      margin: 0 auto;
+}
+
+.template {
+  width: 50vh;
+  margin: 2.5vw;
+  object-fit: cover;
+  background-color: black;
+  height: 26vh;
+}
+
+.aroundtemplate {
+  margin-top: 3vh;
+  display: flexbox;
+  height: 36.6vh;
+}
+
+#more {display: none;}
+
+#myBtn {
+  text-align: center;
+}
+
+#myBtn {
+color: #fff;
+background-color: #000;
+font-size: 16px;
+font-family: sans-serif;
+border: none;
+padding: 10px 20px;
+width: 30vw;
+margin-top: 4vh;
+margin-bottom: 4vh;
+margin-left: 33vw;
+margin-right: 35vw;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#myBtn:hover {
+background-color: #fff;
+color: #000;
+transform: scale(1.1);
+box-shadow: 0 0 10px #000;
+}
+
+@media only screen and (max-width: 710px) {
+
+.aroundtemplate{
+  padding-left: 12vw;
+  margin-top: 10vh;
+}
+
+.thingsicanmake {
+  margin: 20px;
+}
+
+#myBtn {
+  margin-right: 0;
+  margin-left: 24vw;
+}
+
+}
+
+
 #portfolio {
   display: inline;
   position: relative;

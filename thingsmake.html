@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="divicanmake">
+<div class="itscenter">
+    <h2 class="thingsicanmake">Voorbeelden van dingen die ik kan maken:</h2>
+</div>
+</div>
+<div class="aroundtemplate">
+    <p>
+
+<a href="templates/travel/index.html">
+        <img src="images/travel.JPG" alt="" class="template">
+</a>
+<a href="templates/consulting/index.html">
+    <img src="images/consulting.JPG" alt="" class="template">
+</a>
+<a href="templates/donate/index.html">
+    <img src="images/donate.JPG" alt="" class="template">
+</a>
+
+<br/>
+<button onclick="myFunction()" id="myBtn">Meer weergeven</button>
+<span id="dots"></span><span id="more">
+   
+<a href="templates/experience/index.html">
+    <img src="images/experience.JPG" alt="" class="template">
+</a>
+<a href="templates/fotografie/index.html">
+    <img src="images/photo.JPG" alt="" class="template">
+</a>
+<a href="templates/babysiting/index.html">
+    <img src="images/babysiting.JPG" alt="" class="template">
+</a>
+<a href="templates/carrent/index.html">
+    <img src="images/carrent.JPG" alt="" class="template">
+</a>
+<a href="templates/carservice/index.html">
+    <img src="images/car.JPG" alt="" class="template">
+</a>
+<a href="templates/fruitshop/index.html">
+    <img src="images/fruit.JPG" alt="" class="template">
+</a>
+</span></p>
+</div>
+<script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Meer weergeven";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Minder weergeven";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<style>
+    .divicanmake {
+    display: flex;
+    width: 95vw;
+    height: 10vh;
+}
+
+.thingsicanmake {
+    font-size: 1.9rem;
+    font-family: "Anuphan", sans-serif;
+    text-align: center;
+}
+
+.itscenter {
+        margin: 0 auto;
+}
+
+.template {
+    width: 50vh;
+    margin: 2.5vw;
+    object-fit: cover;
+    background-color: black;
+    height: 26vh;
+}
+
+.aroundtemplate {
+    margin-top: 3vh;
+    display: flexbox;
+    height: 36.6vh;
+}
+
+#more {display: none;}
+
+#myBtn {
+    text-align: center;
+}
+
+#myBtn {
+  color: #fff;
+  background-color: #000;
+  font-size: 16px;
+  font-family: sans-serif;
+  border: none;
+  padding: 10px 20px;
+  width: 30vw;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-left: 33vw;
+  margin-right: 35vw;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myBtn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #000;
+}
+
+@media only screen and (max-width: 710px) {
+
+.aroundtemplate{
+    padding-left: 12vw;
+    margin-top: 10vh;
+}
+
+.thingsicanmake {
+    margin: 20px;
+}
+
+#myBtn {
+    margin-right: 0;
+    margin-left: 24vw;
+}
+
+}
+</style>
+</body>
+</html>

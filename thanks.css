@@ -43,7 +43,7 @@ button {
     font-family: "Anuphan", sans-serif;
     font-size: 20px;
     border: none;
-    background-color: rgb(92, 214, 86);
+    background-color: rgb(71, 130, 233);
     border-radius: 22px;
 }
 
@@ -52,4 +52,8 @@ button {
     height: 60vh;
     top: 10vh;
     margin-left: 10vw;
+}
+
+.border border-3 border-success{
+    background-color: rgb(71, 130, 233);
 }

@@ -92,7 +92,9 @@ nav{
 
 @media only screen and (max-width:900px ){
 
-
+  .button_container {
+    margin-top: 140vh;
+  }
 
 header{
 	position:absolute;
@@ -710,6 +712,10 @@ h2 {
 	.logotext {
   display: hidden;
 		display: none;
+}
+
+.button_container {
+  margin-top: 140vh;
 }
 	
 

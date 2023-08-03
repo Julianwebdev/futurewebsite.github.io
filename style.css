@@ -275,7 +275,7 @@ font-size: 25px;
 }
 
 .ex2 {
-  margin-bottom: 7vh;
+  margin-bottom: 6vh;
   text-align: center;
   line-height: 1.35rem;
   font-size: 20px;
@@ -319,7 +319,7 @@ margin-top: 4vh;
 }
 
 .ex3 {
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
   text-align: center;
   line-height: 1.35rem;
   font-size: 20px;
@@ -363,7 +363,7 @@ button:hover {
   margin-left: 0px;
   float: left;
   font-size: 1.05rem;
-	margin-bottom: 6.5vh;
+	margin-bottom: 9.5vh;
 }
 
 .checklist li {

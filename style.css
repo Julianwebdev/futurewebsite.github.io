@@ -415,8 +415,6 @@ float: left;
 .example:after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   height: 490%;
   width: 150%;
   background: #78c7d2;

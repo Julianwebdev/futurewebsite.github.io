@@ -818,13 +818,16 @@ h2 {
 
   .ex1, .ex2, .ex3 {
     font-size: 30px;
-    line-height: 2.5rem;
+    line-height: 2rem;
   }
+	.ex1 {
+		margin-bottom: 0vh;}
+	
 	.ex2 {
 		margin-bottom: 7vh;}
 
 	.ex3 {
-		margin-bottom: 0vw;
+		margin-bottom: 3vw;
 	}
 
   .checklist {

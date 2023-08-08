@@ -93,7 +93,7 @@ nav{
 @media only screen and (max-width:900px ){
 
   .button_container {
-    margin-top: 125vh;
+    margin-top: 145vh;
   }
 
 header{
@@ -385,6 +385,7 @@ float: left;
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 .button_container {
+  margin-top10vh
 	position: absolute;
   left: 0;
   right: 0;

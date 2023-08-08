@@ -385,13 +385,10 @@ float: left;
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 .button_container {
-  margin-top10vh
 	position: absolute;
   left: 0;
   right: 0;
 }
-
-
 
 .example {
   border: none;

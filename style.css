@@ -230,8 +230,8 @@ font-size: 25px;
   padding: 2vw;
   border-radius: 15px;
   background: linear-gradient(
-    #64dcfa 0%,
-    #64dcfa 35%,
+    #E6F4F1 0%,
+    #E6F4F1 35%,
     #e0e0e0 35%,
     #e0e0e0 100%
   );
@@ -260,8 +260,8 @@ font-size: 25px;
   padding: 2vw;
   border-radius: 15px;
   background: linear-gradient(
-    rgb(85, 141, 237) 0%,
-    rgb(85, 141, 237) 35%,
+    #002587 0%,
+    #002587 35%,
     #e6e6e6 35%,
     #e6e6e6 100%
   );
@@ -295,8 +295,8 @@ font-size: 25px;
   padding: 2vw;
   border-radius: 15px;
   background: linear-gradient(
-    #64dcfa 0%,
-    #64dcfa 36%,
+    #E6F4F1 0%,
+    #E6F4F1 36%,
     #e0e0e0 36%,
     #e0e0e0 100%
   );
@@ -501,7 +501,7 @@ position: absolute;
 
 .stripe {
   margin-top: 3vh;
-  color: rgb(71, 130, 233);
+  color: #C8A762;
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   line-height: 20px;
